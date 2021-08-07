@@ -1,7 +1,22 @@
-{{#each tickets}}
+<h1>Tickets</h1>
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Issue</td>
+        <td></td>
+        <td></td>
+    </tr>
 
+{{#each tickets}}
+    <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.issue}}</td>
+        <td><a href="/tickets/edit/{{this._id}}">EDIT</a></td>
+        <td><a href="/tickets/{{this._id}}">DELETE</a></td>
+    </tr>
+{{/each}}
+
+</table>
 <h1>{{this.name}}</h1>
 
 <h2>{{this.issue}}</h2>
-
-{{/each}}

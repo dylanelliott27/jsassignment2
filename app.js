@@ -26,7 +26,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/tickets', ticketRouter);
 
-mongoose.connect('mongodb+srv://dylan:<passwordhere>@cluster0.5xoyk.mongodb.net/WorkHub?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect('mongodb+srv://dylan:<pwhere>@cluster0.5xoyk.mongodb.net/WorkHub?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true})
 .then(result => {
   console.log("Connected: " + result);
 })

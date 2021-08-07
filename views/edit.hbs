@@ -1,0 +1,17 @@
+<h1>EDIT!</h1>
+
+
+<h1> Ticket Owner: {{ticket.name}} </h1>
+
+<h2>Issue: {{ticket.issue}} </h1>
+
+
+
+<form method="POST">
+    <label>New name:</label>
+    <input name="name" id="name">
+    <label> New Issue:</label>
+    <input name="issue" id="issue">
+    <input type="hidden" name="id" value="{{ticket._id}}">
+    <button type="submit">EDIT</button>
+</form>
